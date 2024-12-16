@@ -60,11 +60,10 @@ function checkAnswer(currentlevel){
     }
   }else{
     //if user got the answer wrong
-    console.log("wrong");
 
     playSound("wrong");
 
-    //change background when answer is wrong!
+    //flash
     $("body").addClass("game-over");
     setTimeout(function(){
       $("body").removeClass("game-over");
