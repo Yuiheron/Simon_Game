@@ -31,7 +31,7 @@ function nextSequence(){
 
   //plays the entire sequence again
   let delay = 0;
-  gamePattern.forEach(function(color, index) {
+  gamePattern.forEach(function(color) {
     setTimeout(function() {
       playSound(color);
     }, delay);
